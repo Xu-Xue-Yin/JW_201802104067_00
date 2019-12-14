@@ -1,0 +1,358 @@
+{
+	"info": {
+		"_postman_id": "dc24d419-9ee5-4bed-b14e-fa0833e22d40",
+		"name": "GraduateProjectTest.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/graduateProject.ctl",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/graduateProject.ctl?teacherId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graduateProject.ctl"
+					],
+					"query": [
+						{
+							"key": "teacherId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/graduateProject.ctl",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"graduateProjectCategory\": {\r\n            \"description\": \"应用研究\",\r\n            \"id\": 1,\r\n            \"no\": \"01\"\r\n        },\r\n        \"graduateProjectType\": {\r\n            \"description\": \"设计\",\r\n            \"id\": 1,\r\n            \"no\": \"01\"\r\n        },\r\n        \"teacher\": {\r\n            \"id\": 2,\r\n            \"name\": \"XXY\",\r\n            \"no\": \"01\"\r\n        },\r\n        \"title\": \"网上教学平台的设计与实现\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/graduateProject.ctl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graduateProject.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/graduateProject.ctl",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"graduateProjectCategory\": {\r\n            \"description\": \"应用研究\",\r\n            \"id\": 1,\r\n            \"no\": \"01\"\r\n        },\r\n        \"graduateProjectType\": {\r\n            \"description\": \"设计\",\r\n            \"id\": 1,\r\n            \"no\": \"01\"\r\n        },\r\n        \"id\": 3,\r\n        \"teacher\": {\r\n            \"id\": 1,\r\n            \"name\": \"徐学印\",\r\n            \"no\": \"01\"\r\n        },\r\n        \"title\": \"人工智能在建筑中的应用\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/graduateProject.ctl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graduateProject.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/graduateProject.ctl?id=3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/graduateProject.ctl?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graduateProject.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/graduateProjectCategory.ctl",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/graduateProjectCategory.ctl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graduateProjectCategory.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/graduateProjectCategory.ctl",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"xxxxx\",\r\n    \"no\": \"03\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/graduateProjectCategory.ctl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graduateProjectCategory.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/graduateProjectCategory.ctl",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"description\": \"YYYYY\",\r\n        \"id\": 3,\r\n        \"no\": \"01\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/graduateProjectCategory.ctl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graduateProjectCategory.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/graduateProjectCategory.ctl?id=3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/graduateProjectCategory.ctl?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graduateProjectCategory.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/graduateProjectType.ctl",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/graduateProjectType.ctl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graduateProjectType.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/graduateProjectType.ctl",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"description\": \"测绘\",\r\n        \"no\": \"05\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/graduateProjectType.ctl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graduateProjectType.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/graduateProjectType.ctl",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"description\": \"xxxxx\",\r\n        \"id\": 3,\r\n        \"no\": \"03\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/graduateProjectType.ctl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graduateProjectType.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/graduateProjectTypectl?id=3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/graduateProjectType.ctl?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graduateProjectType.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

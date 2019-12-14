@@ -1,0 +1,51 @@
+//信管182 徐学印 201802104067
+create table ProjectCategory(
+id bigint auto_increment primary key,
+description varchar(255) not null,
+no varchar(255) not null,
+remarks varchar(255)
+);
+
+create table ProjectType(
+id bigint auto_increment primary key,
+description varchar(255) not null,
+no varchar(255) not null,
+remarks varchar(255)
+);
+
+create table Teacher(
+id bigint auto_increment primary key,
+name varchar(255) not null,
+no varchar(255) not null unique
+);
+
+create table User(
+id bigint auto_increment,
+username varchar(255) not null,
+password varchar(255) not null,
+loginTime date,
+teacher_id bigint,
+primary key(id,teacher_id),
+foreign key(teacher_id) references Teacher(id)
+);
+
+create table Project(
+id bigint auto_increment,
+title varchar(255) not null,
+ProjectCategory_id bigint,
+ProjectType_id bigint,
+Teacher_id bigint,
+primary key(id,ProjectCategory_id,ProjectType_id,Teacher_id),
+foreign key(ProjectCategory_id) references ProjectCategory(id),
+foreign key(ProjectType_id) references ProjectType(id),
+foreign key(Teacher_id) references Teacher(id)
+);
+
+insert into projecttype(description,no) values("设计","01");
+insert into projecttype(description,no) values("论文","02");
+insert into projectcategory(description,no) values("应用研究","01");
+insert into projectcategory(description,no) values("社会调查","02");
+insert into Teacher(name,no) values("徐学印","01");
+insert into user(username,password,Teacher_id) values("01","01",1);
+insert into project(title,ProjectCategory_id,ProjectType_id,Teacher_id) values("网上教学平台的设计与实现",1,1,1);
+insert into project(title,ProjectCategory_id,ProjectType_id,Teacher_id) values("人工智能在建筑中的应用",1,1,1);
